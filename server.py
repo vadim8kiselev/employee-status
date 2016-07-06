@@ -22,7 +22,7 @@ def check_desktop_status():
             with open(template_file) as template:
                 page.write(template.read().replace('$', response))
         except IOError, err:
-            page.write('<h1>{0}<br/><br/>File template.html is not found</h1>'.format(response))
+            page.write('<h1>{0}<br/><a href="https://github.com/vadim8kiselev/employee-status/archive/master.zip">Download</a></h1>'.format(response))
 
 
 class Handler(SimpleHTTPServer.SimpleHTTPRequestHandler):
