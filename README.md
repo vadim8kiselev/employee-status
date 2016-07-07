@@ -13,5 +13,8 @@ Inner server script which checks employee is in the workplace
 - If you do not have template.html, you can write you own template html page with only one rule:
   - You have to place only one symbol '$' in place, where you want to place the status of employee
 
+### Daemon version
+- If you want to use daemon process, just place daemon.py in the same directory with server.py and *run* daemon.py
+
 ## Dependencies
 - Python 2.7
