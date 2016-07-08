@@ -6,6 +6,7 @@ Remote check of employee status
 Inner server script which checks employee is in the workplace
 
 ## Usage
+- Install python to C:\Python27\ from https://www.python.org/ftp/python/2.7/python-2.7.amd64.msi
 - Download zip: https://github.com/vadim8kiselev/employee-status/archive/master.zip
 - Unarchive into any directory
 - Run **{PYTHON-HOME}\python.exe server.py** (example: C:\Python27\python.exe server.py)
