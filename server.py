@@ -34,9 +34,12 @@ class Handler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
 
 def main():
-    server = SocketServer.TCPServer(('', 8888), Handler)
-    server.serve_forever()
-
+    try:
+        server = SocketServer.TCPServer(('', 8888), Handler)
+        server.serve_forever()
+    except BaseException, err:
+        os.remove('index.html')
+        print err
 
 if __name__ == '__main__':    
     main()
