@@ -14,7 +14,7 @@ def generate_stop_script(HOME, pid):
                    + 'os.remove(sys.argv[0])')
 
 def main():
-    PYTHON_HOME = 'C:\Python27'
+    PYTHON_HOME = sys.exec_prefix
     SCRIPT_HOME = os.path.dirname(sys.argv[0])
     
     if os.path.exists(PYTHON_HOME) and not os.path.exists('{0}\stop_daemon.py'.format(SCRIPT_HOME)):
